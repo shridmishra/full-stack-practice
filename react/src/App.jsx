@@ -1,21 +1,39 @@
-import { CharacterCounter } from "./components/CharacterCounter";
-import { Counter } from "./components/Counter";
-import { LoginForm } from "./components/LoginForm";
-import { LoginStatus } from "./components/LoginStatus";
-import { NameInput } from "./components/NameInput";
-import { SignUpForm } from "./components/SignUpForm";
-import { Toggle } from "./components/Toggle";
-import { UserCard } from "./components/UserCard";
-import WelcomeMessage from "./components/WelcomeMessage";
+import { CharacterCounter } from "./components/useEffect/CharacterCounter";
+import { Counter } from "./components/useEffect/Counter";
+import { LoginForm } from "./components/useState/LoginForm";
+import { LoginStatus } from "./components/useEffect/LoginStatus";
+import { NameInput } from "./components/useEffect/NameInput";
+import { SignUpForm } from "./components/useState/SignUpForm";
+import { Toggle } from "./components/useState/Toggle";
+import { AutoLogout } from "./components/useEffect/AutoLogout";
+import { Fetch } from "./components/useEffect/Fetch";
+import { SeeTime } from "./components/useEffect/SeeTime";
+import { Size } from "./components/useEffect/Size";
+import { UserCard } from "./components/useState/UserCard";
+import WelcomeMessage from "./components/useState/WelcomeMessage";
+import { BookList, SearchInput } from "./components/useRef/Filters";
+import { ToggleTwo } from "./components/useRef/Toggle";
+import { TabSwitch } from "./components/useRef/TabSwitch";
+import { CounterWithPrevious } from "./components/useRef/input";
+import { ScrollDown } from "./components/useRef/ScrollDown";
+import { ControlledForm, UncontrolledLogin } from "./components/useRef/forms";
 
 function App() {
-  // const books = ["1984", "Brave New World", "Sapiens"];
+  // const books = [
+  //   "1984",
+  //   "Brave New World",
+  //   "Sapiens",
+  //   "The Great Gatsby",
+  //   "Thinking, Fast and Slow",
+  // ];
+
+  // const [searchQuery, setSearchQuery] = useState("");
 
   return (
     <div
       style={{
         minHeight: "100vh",
-        minWidth:"100vw",
+        minWidth: "100vw",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
@@ -23,35 +41,51 @@ function App() {
         padding: "2rem",
       }}
     >
-      {/* <div>
-        <WelcomeMessage />
-        <UserCard name="shrid" age="21" role="admin" />
-        <div>{books.map(book => <li key={book}>{book}</li>)}</div>
-        <LoginStatus isLoggedIn={true} />
-      </div> */}
-
-      <div
-        style={{
-          backgroundColor: "black",
-          borderRadius: "8px",
-          boxShadow: "0 4px 10px rgba(0, 0, 0, 0.1)",
-          display: "flex",
-          flexDirection: "column",
-          gap: "1.5rem",
-          width: "100%",
-          maxWidth: "400px",
-          padding:"2rem",
-        }}
-      >
-        {/* <Counter />
-        <NameInput />
-        <LoginForm/> */}
-        {/* <Toggle/>
-        <CharacterCounter/> */}
-        <SignUpForm/>
+      <div>
+        {/* <SearchInput
+          searchQuery={searchQuery}
+          setSearchQuery={setSearchQuery}
+        />
+        <BookList books={books} searchQuery={searchQuery} /> */}
+        {/* <ToggleTwo/>
+      <TabSwitch/>
+      <AutoFocusInput/>
+      <ScrollDown/> */}
+        {/* <CounterWithPrevious/> */}
+      </div>
+      
+      <div>
+        <UncontrolledLogin />
+        <ControlledForm />
       </div>
     </div>
   );
 }
 
 export default App;
+
+//  <div
+//         style={{
+//           backgroundColor: "black",
+//           borderRadius: "8px",
+//           boxShadow: "0 4px 10px rgba(0, 0, 0, 0.1)",
+//           display: "flex",
+//           flexDirection: "column",
+//           gap: "1.5rem",
+//           width: "100%",
+//           maxWidth: "400px",
+//           padding: "2rem",
+//         }}
+//       >
+//         {/* <Counter />
+//         <NameInput />
+//         <LoginForm />
+//         <Toggle />
+//         <CharacterCounter />
+//         <SignUpForm />
+//         <Fetch />
+//         <SeeTime />
+//         <Size />
+//         <AutoLogout /> */}
+
+//       </div>
