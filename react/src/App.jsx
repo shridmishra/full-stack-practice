@@ -17,6 +17,7 @@ import { TabSwitch } from "./components/useRef/TabSwitch";
 import { CounterWithPrevious } from "./components/useRef/input";
 import { ScrollDown } from "./components/useRef/ScrollDown";
 import { ControlledForm, UncontrolledLogin } from "./components/useRef/forms";
+import { TodoReducer } from "./components/todoReducer";
 
 function App() {
   // const books = [
@@ -54,10 +55,12 @@ function App() {
         {/* <CounterWithPrevious/> */}
       </div>
       
-      <div>
+      {/* <div>
         <UncontrolledLogin />
         <ControlledForm />
-      </div>
+      </div> */}
+
+      <TodoReducer/>
     </div>
   );
 }
