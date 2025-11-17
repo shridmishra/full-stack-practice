@@ -1,0 +1,11 @@
+{
+  "name": "js-interview-assignments",
+  "version": "1.0.0",
+  "description": "Five JavaScript interview assignments with tests (closures, new operator, Promises, array helpers, deep clone)",
+  "main": "index.js",
+  "scripts": {
+    "test": "node tests/runTests.js"
+  },
+  "author": "",
+  "license": "MIT"
+}

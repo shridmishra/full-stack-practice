@@ -11,3 +11,10 @@ target/
 pnpm-lock.yaml
 package-lock.json
 yarn.lock
+
+# Environment variables (CRITICAL - prevent secrets leak)
+.env
+.env.*
+!.env.example
+!.env.template
+!.env.sample
